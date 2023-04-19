@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        div#Area {
+            font: normal 22pt Arial;
+            background : rgb(77, 211, 60);
+            color: rgb(255, 255, 255);
+            width: 280px;
+            height: 200px;
+            line-height: 190px;;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+ <div id = "Area" >
+ Interation... 
+ 
+     </div>
+
+    <script>
+    var a = window.document.getElementById('Area')
+        a.addEventListener('mouseenter', Enter)
+        a.addEventListener('mouseout', Out)
+        a.addEventListener('mouseup',up)
+        a.addEventListener('mousedown',Click)
+        a.addEventListener('mouseout',)
+    function Click(){
+        alert("OAKSDAKDASD")
+        a.innerHTML = 'Clicked' 
+        a.style.background = 'green'  
+    }
+    function up (){
+        a.style.background = 'grey'
+    }
+function Enter(){
+    a.innerHTML = "Entered!"
+    a.style.background = 'grey'
+}
+function Out(){
+    a.innerHTML = 'Out!'
+    a.style.background = 'Grey'
+}
+    function Out2 () {
+        a.innerHTML = ' interation...'
+        a.style.background = 'Grey'
+
+    }
+
+    </script>
+    
+    
+</body>
+</html>
