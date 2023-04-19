@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation of Country</title>
+    <style>
+        body{
+                font: normal 17px Arial;
+                line-height : 25px ;
+                width: 500px;
+                
+        }
+    </style>
+</head>
+<body>
+    <h1> Validation of Country</h1>
+    Write Your Country : 
+    <input type="text" name="txtst" id="txtst">
+   <input type="button" value="Verify" id = 'Verify' onclick=" Verify()">
+    <div id  ='state'>
+
+    </div>
+    <script>
+    
+    function Verify () {
+        var b  = 'Brasil'
+        var c = document.getElementById('txtst')
+        var country = String(c.value)
+        if(country == b) {
+        //var state = document.querySelector('div#state')
+        state.innerHTML = ' You are <strong>Brazilian</strong>'
+        
+    }else {
+        state.innerHTML = ' You are <strong>Stranger</strong>'
+    }
+}
+    </script>
+    
+</body>
+</html>
