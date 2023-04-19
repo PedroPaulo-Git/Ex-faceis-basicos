@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <div class="att">
+        <h1>Somando números</h1>
+        <p> Numero 1 <input type="number" name="soma1" id="soma1"></p>
+         <p>Numero 2 <input type="number" name="soma2" id="soma2"></p>
+    <button id="soma" onclick="soma()">Somar </button>
+   
+    <div id="res"> <p id="media">Media :</p> </div>
+ </div>
+
+
+
+    <style>
+        h1{
+            text-align: center;
+            align-items: center;
+             padding-bottom: 30px;
+        }
+        .att{
+            border-radius: 25px;
+            background-color:gray ;
+            width: 500px;
+            height: 300px;
+            padding-top: 10px;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+
+    <script>
+        function soma(){
+        var s1 = Number(window.document.getElementById('soma1').value);
+        var s2 = Number(window.document.getElementById('soma2').value);
+        var soma = s1 + s2;
+        var media = soma / 2
+        document.getElementById('media').innerHTML = "Media:" + media;
+
+        }
+
+
+
+    </script>
+</body>
+</html>
